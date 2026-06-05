@@ -50,20 +50,70 @@ datasets.
 
 ### Q-Pathformer Dataset Lifecycle
 
-Reference implementation demonstrating how governed artifacts
-can be transformed into lifecycle-controlled datasets.
+Reference implementation demonstrating how governed artifacts can be transformed into lifecycle-controlled datasets.
 
-Core repository:
+**Core Repository**
 
-https://github.com/qpathformer/v1.0-qpath-dataset-lifecycle
+https://github.com/qpathformer/qpath-dataset-lifecycle
 
-Includes:
+**Capabilities**
 
-- Dataset Passport generation
-- lifecycle routing
-- authorization filtering
-- STATE_3 dataset materialization
-- controlled promotion to STATE_1 datasets
+* Dataset Passport generation
+* Lifecycle routing
+* Authorization filtering
+* STATE_3 dataset materialization
+* Controlled promotion to STATE_1 datasets
+
+The repository provides a practical reference implementation of dataset lifecycle governance concepts developed within the Q-Pathformer research program. It demonstrates how artifacts can move through controlled lifecycle states while preserving provenance, authorization boundaries, and governance records.
+
+---
+
+### Q-Pathformer Enterprise v1.0
+
+Q-Pathformer is a governed data lifecycle system, not a model.
+
+The platform operates as a layered lifecycle pipeline in which:
+
+* Signals are generated through deterministic or runtime processes
+* Signals are contained within **STATE_3** as non-authoritative artifacts
+* Datasets are formed, reviewed, and evaluated within **STATE_2**
+* Datasets are prepared for training and operational use within **STATE_1**
+
+#### System Paths
+
+**Path 1 — Deterministic Corpus to Dataset Pipeline**
+
+A deterministic transformation path that converts structured corpora into governed datasets without runtime model involvement.
+
+**Path 2 — Runtime Signal Generation and Lifecycle Routing**
+
+The primary operational path where runtime-generated signals are routed through lifecycle controls and evidence-generation mechanisms to produce structured governance records.
+
+**Path 3 — External Data Ingestion and Containment**
+
+A controlled ingestion path for external content. Data is normalized and contained within lifecycle boundaries. Promotion beyond containment is not included within the v1.0 release.
+
+#### Governance Principles
+
+* Lifecycle state does not imply authority
+* Execution does not imply validation
+* Validation does not imply authorization
+* Outputs are evidence, not decisions
+
+#### Operational Outcome
+
+The platform establishes a governance-first lifecycle where:
+
+* Data moves through controlled lifecycle states
+* Signals remain non-authoritative throughout processing
+* Evidence is generated through execution
+* Governance authority remains external to runtime outputs
+* Training datasets are formed through controlled lifecycle transitions rather than direct runtime promotion
+
+**Enterprise Repository**
+
+https://github.com/qpathformer/qpathformer-enterprise-v1.0-release
+
 
 ---
 
