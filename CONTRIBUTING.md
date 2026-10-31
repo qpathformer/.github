@@ -8,6 +8,7 @@ GitHub may display this file as default guidance for another organisation
 repository. For project changes, follow that repository's own contribution
 guide, checks and applicable licence notices:
 
+- [Research v1.0 contribution guide](https://github.com/qpathformer/qpathformer-classical-research-v1.0/blob/main/CONTRIBUTING.md)
 - [Dataset Lifecycle contribution guide](https://github.com/qpathformer/qpath-dataset-lifecycle/blob/main/CONTRIBUTING.md)
 - [Enterprise v1.0 contribution guide](https://github.com/qpathformer/qpathformer-enterprise-v1.0-release/blob/main/CONTRIBUTING.md)
 - [Enterprise v2.0 Standards Edition contribution guide](https://github.com/qpathformer/qpathformer-enterprise-v2.0-standards-release/blob/main/CONTRIBUTING.md)
