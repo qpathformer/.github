@@ -1,162 +1,62 @@
 # Q-Pathformer
 
-**Building AI systems that earn trust.  
-Governance-first architectures for machine learning systems.**
+**Building AI systems that earn trust.**
 
-Q-Pathformer is a research initiative focused on developing
-governance-first machine learning architectures and lifecycle-managed
-training datasets.
+Research in routed learning, governed data and inspectable execution.
 
-The project explores how AI systems can integrate structured
-governance artifacts, inspection records, and operational signals
-into machine-readable datasets while preserving provenance,
-authorization scope, lineage traceability, and lifecycle containment.
+Q-Pathformer is a research initiative at Alnotrea Labs exploring how learning systems are designed, evaluated and governed. The work connects learning architectures, controlled dataset preparation and execution tooling, with evidence that readers can inspect and challenge.
 
-This work connects governance frameworks with execution tooling,
-allowing datasets to evolve across exploratory, validation, and
-durable training states while maintaining auditable oversight.
+We investigate how examples reach specialist models, where a limited training budget is best spent, and how data and execution records retain their provenance and authorised scope. The public repositories provide research papers, selected implementations, reference workflows and specifications for further experiments.
 
----
+## Featured research — Q-Pathformer Research v1.0
 
-## Research Origins
+[**Routed States and Three-State Architecture**](https://github.com/qpathformer/qpathformer-classical-research-v1.0/releases/tag/research-v1.0-20261031) brings together the completed classical and quantum-circuit simulation studies, their findings and the proposed architecture for the next research cycle.
 
-The Q-Pathformer work builds on earlier research exploring
-trust engineering and governance architectures for AI systems.
+Start with the reading path that fits your question:
 
-**2022 — Access-PoD Concept**
+- **[Q-Pathformer Routed States: Classical Models and Quantum Circuit Simulation](https://github.com/qpathformer/qpathformer-classical-research-v1.0/blob/research-v1.0-20261031/docs/papers/QPathformer_Main_Paper_v1.0.pdf)** — findings on circuit readouts, model routing, equivalent classical inference and training allocation.
+- **[Q-Pathformer Three-State Architecture and Experimental Specification](https://github.com/qpathformer/qpathformer-classical-research-v1.0/blob/research-v1.0-20261031/docs/papers/QPathformer_Architecture_and_Experimental_Specification_v1.0.pdf)** — proposed software responsibilities, experimental controls and decisions for future integrated experiments.
+- **[Research Approach](https://github.com/qpathformer/qpathformer-classical-research-v1.0/blob/main/docs/RESEARCH_APPROACH.md)** — why the work exists, how questions are tested and where contributions can help.
 
-*“A Web of Sharing Trust-Responsibility toward a Trustless Future”*  
-Introduced the concept of governance-driven AI systems in which
-trust emerges from evidence, traceability, and operational oversight
-rather than static assurances.
+The findings retain improvements, adverse comparisons and inconclusive results. They concern classical computation and circuit simulation; physical-QPU performance, quantum advantage and the full integrated learning architecture require further evidence.
 
-**2024 — Q-Pathformer Architecture**
+## Explore the projects
 
-*“Q-Pathformer — Multi-state Machine Learning & LLM Training”*  
-Proposed a multi-state machine learning architecture in which
-datasets and learning signals evolve across exploratory,
-validation, and durable training stages.
+| Project | What you will find | Practical starting point |
+| --- | --- | --- |
+| **[Research v1.0 — Routed States](https://github.com/qpathformer/qpathformer-classical-research-v1.0)** | Comparative studies of routed models, circuit readouts, classical inference and training allocation, with papers and selected study code. | [Research guide](https://github.com/qpathformer/qpathformer-classical-research-v1.0/blob/main/docs/RESEARCH_GUIDE.md) |
+| **[Dataset Lifecycle](https://github.com/qpathformer/qpath-dataset-lifecycle)** | Reference schemas, Dataset Passports and tooling for preparing dataset candidates while retaining provenance, authorisation scope and lineage. | [Implementation guidance](https://github.com/qpathformer/qpath-dataset-lifecycle/blob/main/docs/execution_toolkit/implementation_guidance.md) |
+| **[Enterprise v1.0](https://github.com/qpathformer/qpathformer-enterprise-v1.0-release)** | A three-path reference release connecting dataset preparation, runtime signals, lifecycle review and execution records, with documented run results. | [Documentation and results](https://github.com/qpathformer/qpathformer-enterprise-v1.0-release/blob/main/docs/README.md) |
+| **[Enterprise v2.0 — Standards Edition](https://github.com/qpathformer/qpathformer-enterprise-v2.0-standards-release)** | Reference implementation and APOD-TR-010 papers exploring authorisation for a named dataset operation, package integrity and bounded execution checks. | [Papers](https://github.com/qpathformer/qpathformer-enterprise-v2.0-standards-release/blob/main/docs/research/README.md) · [Synthetic runbook](https://github.com/qpathformer/qpathformer-enterprise-v2.0-standards-release/blob/main/docs/execution/TR010_STANDARDS_REFERENCE_RUNBOOK.md) |
 
-**2026 — Governed Dataset Lifecycle**
+Each project has its own version, implemented scope and evidence. The Dataset Lifecycle tools include reference stubs; Enterprise v1.0 records different outcomes and limits for its execution paths; Enterprise v2.0 provides standards-exploration and synthetic verification material. Their guides explain what is available and what remains proposed.
 
-*APOD-TR-007 — Governed Dataset Onboarding and Lifecycle Routing*  
-Defines a Dataset Passport model and lifecycle routing framework
-for transforming governance artifacts into controlled training
-datasets.
+## How the work connects
 
----
+The learning research asks **which mechanisms improve a model, under what conditions and at what cost**. The lifecycle references ask **how data can be prepared and reviewed while retaining its history and authorised scope**. The standards work examines **how a prepared package is checked against a specified operation before execution**.
 
-## Core Projects
+These are complementary research questions. The three-state learning specification and dataset lifecycle references define their responsibilities separately; shared terminology does not establish a fully integrated system.
 
-### Q-Pathformer Dataset Lifecycle
+[Access PoD](https://github.com/Access-PoD/access-pod-v1.0) provides related governance research on authority, evidence and lifecycle boundaries. Q-Pathformer develops compatible execution references. Within the lifecycle work, runtime outputs provide evidence for review; governance authority remains with the applicable external process.
 
-Reference implementation demonstrating how governed artifacts can be transformed into lifecycle-controlled datasets.
+## Research direction
 
-**Core Repository**
+The next questions include:
 
-https://github.com/qpathformer/qpath-dataset-lifecycle
+- Comparing routing, training priorities and allocation policies against strong classical controls.
+- Testing adaptation and retention within explicitly defined three-state experiments.
+- Studying execution recovery, resource accounting and the interfaces between learning and lifecycle controls.
+- Preparing separately specified quantum-device experiments with declared measurement budgets and saved classical references.
 
-**Capabilities**
+Each study should identify its question, controls, resource boundaries and the evidence needed for its conclusion. A useful outcome may be an improvement, an explanation of a mechanism, or a finding that a simpler approach remains preferable.
 
-* Dataset Passport generation
-* Lifecycle routing
-* Authorization filtering
-* STATE_3 dataset materialization
-* Controlled promotion to STATE_1 datasets
+The [original architecture and its source history](https://github.com/qpathformer/qpathformer-classical-research-v1.0/blob/main/docs/architecture/README.md) provide context for the programme’s development.
 
-The repository provides a practical reference implementation of dataset lifecycle governance concepts developed within the Q-Pathformer research program. It demonstrates how artifacts can move through controlled lifecycle states while preserving provenance, authorization boundaries, and governance records.
+## Participate
 
----
+Start with the project closest to your question and follow its own contribution guide. Useful contributions include independent reproductions, stronger baselines, numerical checks, clearer resource measurements, corrections and documented negative findings.
 
-### Q-Pathformer Enterprise v1.0
+For changes to this organisation page, see the [profile contribution guide](https://github.com/qpathformer/.github/blob/main/CONTRIBUTING.md). Reuse terms are defined by each repository’s and release’s applicable notices and scope records.
 
-Q-Pathformer is a governed data lifecycle system, not a model.
-
-The platform operates as a layered lifecycle pipeline in which:
-
-* Signals are generated through deterministic or runtime processes
-* Signals are contained within **STATE_3** as non-authoritative artifacts
-* Datasets are formed, reviewed, and evaluated within **STATE_2**
-* Datasets are prepared for training and operational use within **STATE_1**
-
-#### System Paths
-
-**Path 1 — Deterministic Corpus to Dataset Pipeline**
-
-A deterministic transformation path that converts structured corpora into governed datasets without runtime model involvement.
-
-**Path 2 — Runtime Signal Generation and Lifecycle Routing**
-
-The primary operational path where runtime-generated signals are routed through lifecycle controls and evidence-generation mechanisms to produce structured governance records.
-
-**Path 3 — External Data Ingestion and Containment**
-
-A controlled ingestion path for external content. Data is normalized and contained within lifecycle boundaries. Promotion beyond containment is not included within the v1.0 release.
-
-#### Governance Principles
-
-* Lifecycle state does not imply authority
-* Execution does not imply validation
-* Validation does not imply authorization
-* Outputs are evidence, not decisions
-
-#### Operational Outcome
-
-The platform establishes a governance-first lifecycle where:
-
-* Data moves through controlled lifecycle states
-* Signals remain non-authoritative throughout processing
-* Evidence is generated through execution
-* Governance authority remains external to runtime outputs
-* Training datasets are formed through controlled lifecycle transitions rather than direct runtime promotion
-
-**Enterprise Repository**
-
-https://github.com/qpathformer/qpathformer-enterprise-v1.0-release
-
-
----
-
-## Governance Relationship
-
-The governance framework for dataset lifecycle management is
-defined by the **Access-PoD research series**.
-https://github.com/Access-PoD/access-pod-artifacts
-
-Access-PoD establishes:
-
-- governance authority
-- lifecycle semantics
-- dataset passport structure
-- authorization boundaries
-
-Q-Pathformer provides compatible execution tooling and reference
-implementations for working with governed datasets.
-
-Execution environments may consume governed datasets but **do not
-determine governance authority**.
-
----
-
-## Research Direction
-
-Q-Pathformer explores governance-aligned AI system design through:
-
-- multi-state machine learning architectures
-- governed dataset lifecycle management
-- provenance-anchored training datasets
-- controlled dataset promotion and containment
-- execution environments compatible with governance frameworks
-
----
-
-## Publications
-
-• *A Web of Sharing Trust-Responsibility toward a Trustless Future* (2022)  
-  Access-PoD concept development
-
-• *Q-Pathformer — Multi-state Machine Learning & LLM Training* (2024)
-
-• *APOD-TR-007 — Governed Dataset Onboarding and Lifecycle Routing* (2026)
-
-Affiliation: Alnotrea Labs / Policy of Developments — Access-PoD Initiative
+**Anthony Siljeg — Founder, Alnotrea Labs**<br>
+Company affiliation: Alnotrea Pty Ltd · Q-Pathformer Initiative
